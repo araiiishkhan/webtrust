@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96.1%;
+    --foreground: 0 0% 13%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    
+    --primary: 123 47% 34%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 67% 47%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    
+    --accent: 207 74% 45%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 213 100% 50%;
+
+    --chart-1: 123 47% 34%;
+    --chart-2: 0 67% 47%;
+    --chart-3: 36 100% 50%;
+    --chart-4: 90 50% 50%;
+    --chart-5: 207 74% 45%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 13%;
+    --sidebar-primary: 123 47% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 207 74% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 89.8%;
+    --sidebar-ring: 213 100% 50%;
+    
+    --radius: 0.5rem;
+  }
+ 
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply font-open-sans antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-roboto;
+  }
+}
+
+/* Custom colors for the project */
+@layer utilities {
+  .bg-trust-green {
+    background-color: #2E7D32;
+  }
+  .text-trust-green {
+    color: #2E7D32;
+  }
+  .bg-warning-red {
+    background-color: #C62828;
+  }
+  .text-warning-red {
+    color: #C62828;
+  }
+  .bg-info-blue {
+    background-color: #1976D2;
+  }
+  .text-info-blue {
+    color: #1976D2;
+  }
+  .bg-medium-risk {
+    background-color: #FFA000;
+  }
+  .text-medium-risk {
+    color: #FFA000;
+  }
+  .bg-low-risk {
+    background-color: #7CB342;
+  }
+  .text-low-risk {
+    color: #7CB342;
+  }
+}
